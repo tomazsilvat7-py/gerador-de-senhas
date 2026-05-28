@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔐 Gerador de Senhas</h1>
+
+    <div class="senha-area">
+      <input type="password" id="senha" readonly>
+      <button class="mostrar" onclick="mostrarSenha()">👁</button>
+    </div>
+
+    <div class="options">
+      <label>
+        Tamanho:
+        <input type="number" id="tamanho" min="4" max="30" value="12">
+      </label>
+
+      <label>
+        <input type="checkbox" id="maiusculas" checked>
+        Letras Maiúsculas
+      </label>
+
+      <label>
+        <input type="checkbox" id="minusculas" checked>
+        Letras Minúsculas
+      </label>
+
+      <label>
+        <input type="checkbox" id="numeros" checked>
+        Números
+      </label>
+
+      <label>
+        <input type="checkbox" id="simbolos" checked>
+        Símbolos
+      </label>
+    </div>
+
+    <div class="forca">
+      <div id="barra"></div>
+    </div>
+
+    <p id="nivel"></p>
+
+    <button onclick="gerarSenha()">Gerar Senha</button>
+    <button onclick="copiarSenha()">Copiar</button>
+    <button onclick="toggleTema()">🌙 Tema</button>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
