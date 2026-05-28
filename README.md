@@ -20,7 +20,7 @@ Um gerador de senhas simples feito com HTML, CSS e Java Script
 https://tomazsilvat7-py.github.io/gerador-de-senhas/
 
 ## Preview
-
+![Preview](preview.png)
 
 ## Autor
 Tomaz
